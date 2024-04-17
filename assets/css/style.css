@@ -156,7 +156,7 @@ body {
 .g-item {
     background-color: #339CD1;
     height: 500px;
-    margin: 0 5px;
+    margin: 5px;
     border-radius: 5px;
 }
 
@@ -311,10 +311,10 @@ body {
         width: 80%;
     }
 
-    .hero-element .button {
+    .hero-element .button,
+    .contact-body button {
         width: 30%;
     }
-    
 
 
     
