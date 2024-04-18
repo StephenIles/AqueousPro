@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    font-family: "Oswald, san-serif";
+    font-family: "Century Gothic";
     font-size: 20px;
+    background-color: #EEEDED;
 }
 
 .body {
@@ -13,7 +13,7 @@ body {
 /* ----------------------------------- Colours */
 
 .navbar,
-.page-nav,
+.header-div,
 .hero-element .button,
 .footer,
 .logo {
@@ -39,14 +39,14 @@ body {
 /* ----------------------------------- Images */
 
 .logo {
-    background-image: url(../images/LogoSymbol.png);
+    background-image: url(../images/Logo.png);
 }
 
 .hero-image {
     background-image: url(../images/HeroImage.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom
+    background-position: bottom;
 }
 
 
@@ -62,8 +62,7 @@ body {
 .page-nav {
     font-size: 25px;
     font-weight: 700;
-    width: 100%;
-    line-height: 85px;
+    padding-bottom: 20px
 }
 
 .navbar-nav {
@@ -84,6 +83,7 @@ body {
     text-decoration: underline;
 }
 
+/*
 .ui-home, 
 .ui-services {
     text-align: right;
@@ -93,34 +93,56 @@ body {
 .ui-contact-us {
     text-align: left;
 }
+*/
+
+.header-logo {
+    background-color: white;
+    height: 100px;
+}
+
+.home-services {
+    height: 250px;
+    border-radius: 25px;
+    margin: 15px;
+    background-color: white;
+}
+
+.home-services:hover {
+    background-color: #339cd1;
+    color: #fff;
+}
 
 .home-body,
 .services-body {
     margin-bottom: 25px;
 }
 
-.home-element,
-.services-element,
-.contact-body {
-    background-color: rgba(194,191,190,.3);
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.home-body h2,
-.services-body h2 {
+.home-body h2, {
     text-decoration: underline;
     font-size: 40px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+}
+
+.roof {
+    background-image: url(../images/roof.png);
+    height: 75px;
+    width: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: #A5DFFD;
+    margin: auto;
 }
 
 .services-body h1 {
     text-decoration: underline;
     font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .services-body {
-    margin-top: 15px;
+    font-size: 27px;
+    margin-top: 30px;
 }
 
 .contact-body {
@@ -163,11 +185,16 @@ body {
 .gallery-body h1 {
     text-decoration: underline;
 }
+
+.home-services a {
+    text-decoration: none;   
+    color: black;
+}
 /* ----------------------------------- Header */
 
 .header-div {
     width: 100%;
-    height: 100px;
+
     margin: 0;
     padding: 0;
 }
@@ -175,19 +202,12 @@ body {
 /* ----------------------------------- Logo */
 
 .logo {
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid white;
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-}
-
-.header-div {
-    justify-content: center;
-    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 400px;
+    margin: 10px auto;
 }
 
 /* ----------------------------------- Hero Image */
