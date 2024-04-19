@@ -62,12 +62,15 @@ body {
 .page-nav {
     font-size: 25px;
     font-weight: 700;
-    padding-bottom: 20px
 }
 
 .navbar-nav {
-    margin: auto;
     display: inline-block;
+    margin-right: 35px;
+}
+
+.navbar-nav > li {
+    float: right;
 }
 
 .nav-item {
@@ -83,48 +86,38 @@ body {
     text-decoration: underline;
 }
 
-/*
-.ui-home, 
-.ui-services {
-    text-align: right;
-}
-
-.ui-gallery,
-.ui-contact-us {
-    text-align: left;
-}
-*/
-
 .header-logo {
     background-color: white;
     height: 100px;
 }
 
 .home-services {
-    height: 250px;
+    height: 300px;
     border-radius: 25px;
-    margin: 15px;
+    margin: 10px;
+    padding: 0;
     background-color: white;
 }
 
 .home-services:hover {
     background-color: #339cd1;
-    color: #fff;
 }
 
+.home-services a:hover {
+    color: #fff
+}
 .home-body,
 .services-body {
     margin-bottom: 25px;
 }
 
-.home-body h2, {
+.home-body h2 {
     text-decoration: underline;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.roof {
-    background-image: url(../images/roof.png);
+.icon {
     height: 75px;
     width: 75px;
     background-size: contain;
@@ -132,6 +125,40 @@ body {
     border-radius: 50%;
     background-color: #A5DFFD;
     margin: auto;
+    border: 5px solid #A5DFFD;
+}
+
+.roof {
+    background-image: url(../images/roof.png);
+}
+
+.drive {
+    background-image: url(../images/Driveway.png);
+}
+
+.deck {
+    background-image: url(../images/Deck.png);
+}
+
+.soft {
+    background-image: url(../images/sponge.png);
+}
+
+.pressure {
+    background-image: url(../images/Pressure.png);
+}
+
+.steam {
+    background-image: url(../images/Steam.png);
+}
+
+.pure {
+    background-image: url(../images/window.png);
+
+}
+
+.chem {
+    background-image: url(../images/chemical.png);
 }
 
 .services-body h1 {
@@ -190,14 +217,6 @@ body {
     text-decoration: none;   
     color: black;
 }
-/* ----------------------------------- Header */
-
-.header-div {
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-}
 
 /* ----------------------------------- Logo */
 
@@ -213,7 +232,6 @@ body {
 /* ----------------------------------- Hero Image */
 
 .hero-image {
-    /* background-size: 100% 100%; */
     height: 600px;
     display: flex;
     justify-content: center;
