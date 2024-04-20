@@ -9,87 +9,54 @@
   </head>
   <body>
     <div class="container-fliud header-div">
-        <div class="row page-nav">
-          <ul class="navbar-nav text-center collapse" id="navbarToggleExternalContent">
-            <li class="nav-item col-2 ui-home "><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item col-2 ui-services"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item col-2 ui-spare"></li>
-            <li class="nav-item col-2 ui-gallery"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item col-2 ui-contact-us"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+      <div class="row h-100 align-items-center page-nav">
+        <div class="col-lg-4">
+          <div class="logo"> </div>
+        </div>
+        <div class="col-lg">
+          <ul class="navbar-nav collapse" id="navbarToggleExternalContent">
+            <li class="nav-item mx-5 col-2 ui-home "><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item mx-5 col-2 ui-gallery"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item mx-5 col-2 ui-contact-us"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
           </ul>
         </div>
-        <div class="logo" > </div>
         <nav class="navbar navbar-dark">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-        </nav>  
-    </div>
+        </nav>
+      </div> 
+  </div>
     <div class="container contact-intro">
       <div class="row text-center">
         <div class="col-lg">
-          <h1>Contact Us</h1>
+          <h1><strong>Contact Us</strong></h1>
+          <hr>
           <p>Welcome to our contact page! We're delighted to hear from you. Whether you have questions, suggestions, or just want to say hello, this is the place to reach out. Our team is dedicated to providing timely and helpful assistance, so please don't hesitate to get in touch. You can reach us via the form below or through the contact details provided. We look forward to connecting with you!</p>
         </div>
       </div>
     </div>
     <div class="container contact-body">
-        <div class="row text-center">
-          <div class="col-lg">
-            <h1>Contact Form</h1>
-          </div>
-        </div>
         <div class="row justify-content-center">
-            <div class="col-lg">
-              <form action="https://getform.io/f/zazkgxkb" method="POST">
-                <fieldset>  
-                <!-- Text input-->
-                <div class="form-group mb-5 row">
-                  <label class="col-lg-4 control-label col-form-label" for="name">Name</label>  
-                  <div class="col-lg">
-                  <input id="name" name="Name" type="text" placeholder="Your Name" class="form-control input-md" required="">
-                    
-                  </div>
-                </div>
-                
-                <!-- Text input-->
-                <div class="form-group mb-5 row">
-                  <label class="col-lg-4 control-label col-form-label" for="emailAddress">Email Address</label>  
-                  <div class="col-lg">
-                  <input id="emailAddress" name="Email-Address " type="text" placeholder="Email Address" class="form-control input-md">
-                    
-                  </div>
-                </div>
-                
-                <!-- Text input-->
-                <div class="form-group mb-5 row">
-                  <label class="col-lg-4 control-label col-form-label" for="phoneNumber">Phone Number</label>  
-                  <div class="col-lg">
-                  <input id="phoneNumber" name="Phone-Number" type="text" placeholder="Phone Number" class="form-control input-md">
-                    
-                  </div>
-                </div>
-                
-                <!-- Textarea -->
-                <div class="form-group mb-5 row">
-                  <label class="col-lg-4 control-label col-form-label" for="message">How Can We Help?</label>
-                  <div class="col-lg">                     
-                    <textarea class="form-control" id="Enquiry" name="message" placeholder="Let us know what you need help with."></textarea>
-                  </div>
-                </div>
-                
-                <!-- Button -->
-                <div class="form-group mb-5 row text-center">
-                  <div class="col-md">
-                    <button id="submit" name="submit" class="btn btn-primary"><strong>Submit</strong></button>
-                  </div>
-                </div>
-                
-                </fieldset>
-                </form>
-                
+            <div class="col-lg form-body">
+              
+                <iframe
+                id="JotFormIFrame-241096607606054"
+                title="Enquiry Form"
+                onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true"
+                allow="geolocation; microphone; camera; fullscreen"
+                src="https://form.jotform.com/241096607606054"
+                frameborder="0"
+                style="min-width:100%;max-width:100%;height:539px;border:none;"
+                scrolling="no"
+              >
+              </iframe>
+              <script src='https://form.jotform.com/s/umd/latest/for-form-embed-handler.js'></script>
+              <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-241096607606054'", "https://form.jotform.com/")</script>
+            <div class="container-flud contact-cover"></div>
             </div>
         </div>
     </div>

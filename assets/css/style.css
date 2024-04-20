@@ -5,32 +5,16 @@ body {
     background-color: #EEEDED;
 }
 
-.body {
-    height: 100%;
-    text-align: center;
-}
-
 /* ----------------------------------- Colours */
 
 .navbar,
 .header-div,
-.hero-element .button,
-.footer,
-.logo {
+.footer
+ {
     background-color: 	#339cd1;
 }
 
-.hero-element .button {
-    border-color: #339CD1;
-}
-
-.hero-element .button:hover {
-    background-color: #328AD1;
-    border-color: #328AD1;
-}
-
 .page-nav ul li a,
-.hero-element,
 .hero-element .button,
 .hero-element .button:hover {
     color: #fff;
@@ -53,12 +37,6 @@ body {
 /* ----------------------------------- Layout and Sizing */
 
 
-.hero-element .button {
-    width: 30%;
-    font-size: 20px;
-    margin: 15px;
-}
-
 .page-nav {
     font-size: 25px;
     font-weight: 700;
@@ -66,12 +44,9 @@ body {
 
 .navbar-nav {
     display: inline-block;
-    margin-right: 35px;
+    margin-left: 150px;
 }
 
-.navbar-nav > li {
-    float: right;
-}
 
 .nav-item {
     display: inline-block;
@@ -91,6 +66,14 @@ body {
     height: 100px;
 }
 
+.home-contact {
+    height: 150px;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 0;
+    background-color: white;
+}
+
 .home-services {
     height: 300px;
     border-radius: 25px;
@@ -99,15 +82,16 @@ body {
     background-color: white;
 }
 
-.home-services:hover {
+.home-services:hover,
+.home-contact:hover {
     background-color: #339cd1;
 }
 
-.home-services a:hover {
+.home-services a:hover,
+.home-contact a:hover {
     color: #fff
 }
-.home-body,
-.services-body {
+.home-body {
     margin-bottom: 25px;
 }
 
@@ -125,6 +109,17 @@ body {
     border-radius: 50%;
     background-color: #A5DFFD;
     margin: auto;
+    border: 5px solid #A5DFFD;
+}
+
+.page-icon {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: #A5DFFD;
+    margin: 50px auto;
     border: 5px solid #A5DFFD;
 }
 
@@ -161,40 +156,31 @@ body {
     background-image: url(../images/chemical.png);
 }
 
-.services-body h1 {
-    text-decoration: underline;
-    font-size: 50px;
-    margin-bottom: 40px;
+.email {
+    background-image: url(../images/email.png);
 }
 
-.services-body {
-    font-size: 27px;
-    margin-top: 30px;
-}
-
-.contact-body {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.contact-body textarea {
-    height: 200px;
-}
-
-.contact-body h1 {
+.contact-intro h1 {
     margin-top: 10px;
     margin-bottom: 30px;
     text-decoration: underline;
 }
 
-.contact-body button {
-    width: 10%;
-    padding: 10px;
-    font-size: 20px;
-}
-
 .contact-intro {
     margin-top: 70px;
+}
+
+.form-body {
+    position: relative;
+}
+
+.contact-cover {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background-color: #EEEDED;
 }
 
 .gallery-body {
@@ -213,10 +199,17 @@ body {
     text-decoration: underline;
 }
 
-.home-services a {
+.home-services a,
+.home-contact a {
     text-decoration: none;   
     color: black;
 }
+
+.page-body {
+    margin-bottom: 50px;
+}
+
+
 
 /* ----------------------------------- Logo */
 
@@ -227,27 +220,25 @@ body {
     height: 200px;
     width: 400px;
     margin: 10px auto;
+
 }
 
 /* ----------------------------------- Hero Image */
 
 .hero-image {
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-element {
-    width: 50%;
+    width: 300px;
+    height: 300px;
     text-align: center;
     font-weight: 800;
-    background-color: rgba(0,0,0,0.4);
-    padding: 65px;
+    background-color:  #fff;
     border-radius: 10px;
 }
 
-.hero-element h1 {
+.hero-element h2 {
     font-size: 50px;
     padding: 5px;
 }
@@ -286,18 +277,7 @@ body {
         font-size: 20px;
     }
 
-    .logo {
-        height:100px;
-        width:100px;
-    }
 
-    .header-div {
-        height: 70px;
-    }
-
-    .page-nav {
-        line-height: 55px;
-    }
 
 }
 
@@ -324,10 +304,10 @@ body {
     .navbar-nav {
         width: 40%;
         margin: 0;
-        padding:0;
+        padding: 0;
         position: absolute;
-        right: 0;
-        top: 70px;
+        left: 0;
+        bottom: -80px;
     }
 
     .nav-item {
@@ -336,18 +316,17 @@ body {
         background-color: #339CD1;
         border: 1px solid white;
         line-height: 50%;
-        width:100%;
+        width: 100%;
     }
 
     .navbar {
         position: absolute;
-        right: 0;
-        height: 70px;
+        width: 10%;
+        left: 0;
+        bottom: 0;
+        
     }
 
-    .hero-element {
-        width: 80%;
-    }
 
     .hero-element .button,
     .contact-body button {
