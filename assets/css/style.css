@@ -311,12 +311,12 @@ body {
     }
 
     .navbar-nav {
-        width: 25%;
+        width: 35%;
         margin: 0;
         padding: 0;
         position: absolute;
-        left: -20px;
-        bottom: 0;
+        left: -37px; 
+        bottom: -75px;
     }
 
     .nav-item {
@@ -331,9 +331,8 @@ body {
     .navbar {
         position: absolute;
         width: 10%;
-        left: 0;
-        bottom: 30;
-        
+        left: -15px;
+        top: 0;
     }
 
 
@@ -351,6 +350,10 @@ body {
     
     .hero-element .button {
         width: 50%;
+    }
+
+    .home-contact {
+        width: 30%;
     }
 
 
