@@ -1,6 +1,6 @@
 
 body {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", "Apple Gothic", "URW Gothic", "san-serif";
     font-size: 20px;
     background-color: #EEEDED;
 }
@@ -51,6 +51,7 @@ body {
 .nav-item {
     display: inline-block;
     text-align: center;
+    margin-right: 20px;
 }
 
 .page-nav ul li a {
@@ -315,8 +316,8 @@ body {
         margin: 0;
         padding: 0;
         position: absolute;
-        left: -37px; 
-        bottom: -75px;
+        left: 0; 
+        bottom: 0;
     }
 
     .nav-item {
