@@ -201,10 +201,6 @@ body {
     color: black;
 }
 
-.before-after-title, .extra-gallery-title {
-    text-decoration: underline;
-}
-
 .card {
     width: 40%;
     display: inline-block;
